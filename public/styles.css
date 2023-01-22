@@ -7,3 +7,33 @@ body {
 	margin: 0;
 	padding: 0;
 }
+
+.hdr {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.hdr-logo h1 {
+	margin: 0;
+}
+
+.hdr-nav {
+}
+
+.hdr-nav ul {
+	display: flex;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+}
+
+.hdr-nav ul li {
+	margin: 0 10px 0 10px;
+	list-style: none;
+}
+
+.hdr-nav ul li a {
+	text-decoration: none;
+}
