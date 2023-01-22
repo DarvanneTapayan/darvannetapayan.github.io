@@ -95,6 +95,8 @@ header {
 /* section 1 */
 
 .section-one {
+	display: flex;
+	justify-content: center;
 	margin: 0;
 	padding: 0;
 	width: auto;
@@ -104,6 +106,9 @@ header {
 .section-one-title {
 	padding-top: 200px;
 	padding-bottom: 200px;
+	justify-content: center;
+	width: 100%;
+	max-width: 600px;
 }
 
 .section-one h1 {
@@ -136,6 +141,8 @@ header {
 }
 
 .section-two {
+	display: flex;
+	justify-content: center;
 	margin: 0;
 	padding: 0;
 	width: auto;
@@ -146,7 +153,7 @@ header {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-	padding: 0px;
+	padding: 200px 0 200px 0;
 	margin: 0;
 	gap: 19px;
 }
@@ -186,6 +193,6 @@ header {
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 19px;
-
+	margin: 0;
 	color: #5a5a5a;
 }
