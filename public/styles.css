@@ -1,6 +1,8 @@
 * {
 	box-sizing: border-box;
 	font-family: 'Inter', sans-serif;
+	list-style: none;
+	text-decoration: none;
 }
 
 body {
@@ -11,16 +13,10 @@ body {
 header {
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
 	align-items: center;
 	padding: 0 68px;
 	gap: 45px;
-
-	height: 19px;
-
 	align-self: center;
-	align-items: center;
-	display: flex;
 	width: auto;
 	height: 69.79px;
 	justify-content: space-between;
@@ -71,7 +67,6 @@ header {
 
 	line-height: 19px;
 	text-align: right;
-
 	color: #000000;
 }
 
@@ -106,7 +101,7 @@ header {
 
 .section-one-title {
 	position: relative;
-	padding: 200px 0 200px 0;
+	padding: 200px 0;
 	justify-content: center;
 	width: 100%;
 	max-width: 700px;
@@ -125,7 +120,7 @@ header {
 }
 
 .section-one p {
-	padding: 10px 0 0 0;
+	padding: 10px 0 0;
 	margin: 0;
 	height: auto;
 	align-items: center;
@@ -133,6 +128,7 @@ header {
 	font-style: normal;
 	font-weight: 400;
 	font-size: 24px;
+
 	/* identical to box height */
 
 	text-align: center;
@@ -171,7 +167,7 @@ header {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 0 0 68px 0;
+	padding: 0 0 68px;
 	gap: 21px;
 }
 
@@ -180,7 +176,7 @@ header {
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	padding: 0px;
+	padding: 0;
 	gap: 38px;
 }
 
@@ -198,7 +194,7 @@ header {
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	padding: 0px;
+	padding: 0;
 	gap: 38px;
 }
 
@@ -244,4 +240,45 @@ header {
 	font-size: 16px;
 
 	color: #ffffff;
+}
+
+/* - - - - - - - - - - - - - Footer - - - - - - - - - - - - - */
+
+footer {
+	margin: 0;
+	padding: 0;
+}
+
+.ftr-container {
+	border: solid 0.3px #9f9f9f;
+}
+
+.ftr-section {
+	display: flex;
+	padding: 20px 0 20px 68px;
+}
+
+.ftr-links-language {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.ftr-links-language li a {
+	text-decoration: none;
+}
+
+.ftr-map-links {
+	margin: 0;
+	padding: 0 0 0 68px;
+	list-style: none;
+}
+
+.ftr-map-links li a {
+	text-decoration: none;
+}
+
+.ftr-copyright {
+	margin: 0;
+	padding: 20px 0 20px 68px;
 }
