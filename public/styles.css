@@ -3,10 +3,9 @@
 	font-family: 'Inter', sans-serif;
 }
 
-html,
 body {
 	margin: 0;
-	padding: 0;
+	padding: 0 68px;
 }
 
 header {
@@ -25,7 +24,6 @@ header {
 	width: auto;
 	height: 69.79px;
 	justify-content: space-between;
-	padding: 0 68px;
 }
 
 .hdr-logo {
@@ -98,14 +96,13 @@ header {
 
 .section-one {
 	margin: 0;
-	padding: 0;
+	padding: 200px;
 	width: auto;
 	height: auto;
 }
 
 .section-one h1 {
 	margin: 0;
-	padding: 200px;
 	width: auto;
 	font-family: 'Inter';
 	font-style: normal;
@@ -115,4 +112,20 @@ header {
 	text-align: center;
 
 	color: #000000;
+}
+
+.section-one p {
+	padding: 10px 0 0 0;
+	margin: 0;
+	height: auto;
+	align-items: center;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	/* identical to box height */
+
+	text-align: center;
+
+	color: #5a5a5a;
 }
