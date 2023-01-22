@@ -1,5 +1,7 @@
 * {
 	box-sizing: border-box;
+	font-family: 'Bebas Neue', cursive;
+	font-family: 'Inter', sans-serif;
 }
 
 html,
@@ -8,32 +10,67 @@ body {
 	padding: 0;
 }
 
-.hdr {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+header {
+	align-self: center;
 	align-items: center;
-}
-
-.hdr-logo h1 {
-	margin: 0;
-}
-
-.hdr-nav {
-}
-
-.hdr-nav ul {
 	display: flex;
-	justify-content: center;
-	margin: 0;
-	padding: 0;
+	width: auto;
+	height: 69.79px;
+	justify-content: space-between;
+	padding: 0 2vh;
 }
 
-.hdr-nav ul li {
-	margin: 0 10px 0 10px;
+.hdr-logo {
+	/* flex-basis: 20%; */
+	padding-top: 10px;
+	padding-left: 20px;
+	text-align: center;
+}
+
+.hdr-logo img {
+	width: 200px;
+}
+
+.hdr-links {
+	display: flex;
+	flex-basis: 100%;
+	justify-content: flex-end;
+}
+
+.hdr-links li {
 	list-style: none;
+	padding: 0 2rem;
+	transition: ease-out 0.5s;
 }
 
-.hdr-nav ul li a {
+.hdr-links li a {
+	color: black;
+	font-weight: bold;
+	font-size: 16px;
 	text-decoration: none;
+}
+
+.hdr-links li a:hover {
+	color: #753fdf;
+}
+
+.hdr-signin {
+	width: auto;
+}
+
+.hdr-getstarted-button {
+	background-color: #753fdf;
+	border: none;
+	border-radius: 40px;
+	color: white;
+	cursor: pointer;
+	font-size: 16px;
+	padding: 10px 32px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.hdr-getstarted-button:hover {
+	background-color: #ffffff;
+	color: #753fdf;
 }
