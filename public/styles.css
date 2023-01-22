@@ -96,9 +96,14 @@ header {
 
 .section-one {
 	margin: 0;
-	padding: 200px;
+	padding: 0;
 	width: auto;
 	height: auto;
+}
+
+.section-one-title {
+	padding-top: 200px;
+	padding-bottom: 200px;
 }
 
 .section-one h1 {
@@ -126,6 +131,61 @@ header {
 	/* identical to box height */
 
 	text-align: center;
+
+	color: #5a5a5a;
+}
+
+.section-two {
+	margin: 0;
+	padding: 0;
+	width: auto;
+	height: auto;
+}
+
+.section-two-webdevlife {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 0px;
+	margin: 0;
+	gap: 19px;
+}
+
+.section-two-webdevlife h2 {
+	margin: 0;
+}
+
+.section-two-webdevlife h3 {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 32px;
+}
+
+.section-two-name-date {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 0px;
+	gap: 40px;
+}
+
+.section-two-webdevlife h3 {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+
+	color: #000000;
+}
+
+.section-two-webdevlife p {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
 
 	color: #5a5a5a;
 }
