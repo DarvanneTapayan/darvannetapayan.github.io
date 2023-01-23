@@ -1,5 +1,5 @@
 # darvannetapayan.github.io
-## to open my portfolio simply copy this code and paste it in a new tab: darvannetapayan.github.io/public/index.html
+## to open my portfolio simply copy the code below and paste it on a new tab: darvannetapayan.github.io/public/index.html
 
 
 ## About me
