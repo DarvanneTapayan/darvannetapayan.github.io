@@ -1,6 +1,6 @@
 * {
 	box-sizing: border-box;
-	font-family: 'Inter', sans-serif;
+	font-family: Inter, sans-serif;
 	list-style: none;
 	text-decoration: none;
 }
@@ -51,7 +51,7 @@ header {
 
 .hdr-links li a {
 	color: black;
-	font-family: 'Inter';
+	font-family: Inter, sans-serif;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 16px;
@@ -67,7 +67,7 @@ header {
 
 	line-height: 19px;
 	text-align: right;
-	color: #000000;
+	color: #000;
 }
 
 .hdr-getstarted-button {
@@ -83,7 +83,7 @@ header {
 }
 
 .hdr-getstarted-button:hover {
-	background-color: #ffffff;
+	background-color: #fff;
 	color: #753fdf;
 }
 
@@ -110,13 +110,13 @@ header {
 .section-one h1 {
 	margin: 0;
 	width: auto;
-	font-family: 'Inter';
+	font-family: Inter, sans-serif;
 	font-style: normal;
 	font-weight: 700;
 	font-size: 40px;
 	line-height: 48px;
 	text-align: center;
-	color: #000000;
+	color: #000;
 }
 
 .section-one p {
@@ -124,7 +124,7 @@ header {
 	margin: 0;
 	height: auto;
 	align-items: center;
-	font-family: 'Inter';
+	font-family: Inter, sans-serif;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 24px;
@@ -181,7 +181,7 @@ header {
 }
 
 .section-two-socialmedia h6 {
-	font-family: 'Inter';
+	font-family: Inter, sans-serif;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 16px;
@@ -199,7 +199,7 @@ header {
 }
 
 .section-two-powered-by h6 {
-	font-family: 'Inter';
+	font-family: Inter, sans-serif;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 16px;
@@ -220,12 +220,12 @@ header {
 	display: flex;
 	flex-direction: row;
 	align-items: flex-start;
-	padding: 0px;
+	padding: 0;
 	gap: 40px;
 }
 
 .section-two-webdevlife h3 {
-	font-family: 'Inter';
+	font-family: Inter, sans-serif;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 16px;
@@ -234,12 +234,11 @@ header {
 }
 
 .section-two-webdevlife p {
-	font-family: 'Inter';
+	font-family: Inter, sans-serif;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 16px;
-
-	color: #ffffff;
+	color: #fff;
 }
 
 /* - - - - - - - - - - - - - Footer - - - - - - - - - - - - - */
@@ -264,7 +263,7 @@ footer {
 	list-style: none;
 }
 
-.ftr-links-language li a {
+.ftr-links-language li a:hover {
 	text-decoration: none;
 }
 
@@ -274,7 +273,7 @@ footer {
 	list-style: none;
 }
 
-.ftr-map-links li a {
+.ftr-map-links li a:hover {
 	text-decoration: none;
 }
 
