@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="#" />
+    <title>Projects</title>
+  </head>
+  <body>
+    <header>
+      <div class="hdr-logo">
+        <a href="#">DarvanneTapayan</a>
+        <img src="#" alt="" />
+      </div>
+      <ul class="hdr-links">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="about.html">About</a>
+        </li>
+        <li>
+          <a href="projects.html" style="color: #753fdf">Projects</a>
+        </li>
+      </ul>
+      <!-- <div class="hdr-signin">
+            <div>
+              <input type="button" class="hdr-getstarted-button" value="See More" />
+            </div>
+          </div> -->
+    </header>
+    <br />
+    ______________________________________________________________
+    <section>
+      <h1>Scientific Calculator</h1>
+      <form id="calculator-form">
+        <input type="text" id="display" disabled />
+        <div>
+          <input type="button" value="1" onclick="appendToDisplay('1')" />
+          <input type="button" value="2" onclick="appendToDisplay('2')" />
+          <input type="button" value="3" onclick="appendToDisplay('3')" />
+          <input type="button" value="+" onclick="appendToDisplay('+')" />
+        </div>
+        <div>
+          <input type="button" value="4" onclick="appendToDisplay('4')" />
+          <input type="button" value="5" onclick="appendToDisplay('5')" />
+          <input type="button" value="6" onclick="appendToDisplay('6')" />
+          <input type="button" value="-" onclick="appendToDisplay('-')" />
+        </div>
+        <div>
+          <input type="button" value="7" onclick="appendToDisplay('7')" />
+          <input type="button" value="8" onclick="appendToDisplay('8')" />
+          <input type="button" value="9" onclick="appendToDisplay('9')" />
+          <input type="button" value="*" onclick="appendToDisplay('*')" />
+        </div>
+        <div>
+          <input type="button" value="/" onclick="appendToDisplay('/')" />
+          <input type="button" value="0" onclick="appendToDisplay('0')" />
+          <input type="button" value="=" onclick="calculate()" />
+          <input type="button" value="C" onclick="clearDisplay()" />
+        </div>
+      </form>
+
+      <script>
+        function appendToDisplay(value) {
+          document.getElementById("display").value += value;
+        }
+
+        function calculate() {
+          try {
+            const expression = document.getElementById("display").value;
+            const result = eval(expression); // Use eval() for simplicity, but be cautious with user input
+            document.getElementById("display").value = result;
+          } catch (error) {
+            document.getElementById("display").value = "Error";
+          }
+        }
+
+        function clearDisplay() {
+          document.getElementById("display").value = "";
+        }
+      </script>
+    </section>
+    ______________________________________________________________
+  </body>
+</html>
