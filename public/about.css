@@ -95,12 +95,35 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  padding: 10rem;
+
   width: auto;
-  height: 500px;
+  height: auto;
 }
 
 .about-me-container {
-  font-size: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5rem;
+}
+
+.about-me-picture {
+  max-width: 35rem;
+  max-height: 35rem;
+  border-radius: 2rem;
+}
+
+.about-me-paragraph {
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  font-size: 20px;
+}
+
+.about-me-paragraph p {
+  color: #5a5a5a;
 }
 
 /* - - - - - - - - - - - - - section 1 - - - - - - - - - - - - - */
@@ -119,7 +142,7 @@ header {
 }
 
 .section-one-container {
-  padding: 200px 68px;
+  padding: 10rem;
 }
 
 .section-one-socialmedia {
@@ -138,7 +161,7 @@ header {
   font-size: 16px;
   margin: 0;
 }
-	
+
 .section-one-webdevlife p {
   font-family: Inter, sans-serif;
   font-style: normal;
@@ -149,9 +172,8 @@ header {
 
 .section-one-icon {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 0 68px;
+  flex-direction: row;
+  align-self: center;
   gap: 21px;
 }
 
