@@ -99,7 +99,7 @@ header {
   padding: 10rem;
 
   width: auto;
-  height: auto;
+  height: 100vh;
 }
 
 .about-me-container {
@@ -142,7 +142,7 @@ header {
 }
 
 .section-one-container {
-  padding: 10rem;
+  /* padding: 10rem; */
 }
 
 .section-one-socialmedia {
@@ -198,4 +198,45 @@ header {
 .section-one-powered-by .sec-img-one-icon {
   width: 24px;
   height: 24px;
+}
+
+/* - - - - - - - - - - - - - Footer - - - - - - - - - - - - - */
+
+footer {
+  margin: 0;
+  padding: 0;
+}
+
+.ftr-container {
+  border: solid 0.3px #9f9f9f;
+}
+
+.ftr-section {
+  display: flex;
+  padding: 20px 0 20px 68px;
+}
+
+.ftr-links-language {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ftr-links-language li a:hover {
+  text-decoration: none;
+}
+
+.ftr-map-links {
+  margin: 0;
+  padding: 0 0 0 68px;
+  list-style: none;
+}
+
+.ftr-map-links li a:hover {
+  text-decoration: none;
+}
+
+.ftr-copyright {
+  margin: 0;
+  padding: 20px 0 20px 68px;
 }
