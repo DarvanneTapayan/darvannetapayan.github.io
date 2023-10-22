@@ -1,0 +1,93 @@
+import sqlite3
+
+# Create or connect to a SQLite database file
+conn = sqlite3.connect('online_merch_store.db')
+cursor = conn.cursor()
+
+# Create Customers table
+cursor.execute('''
+    CREATE TABLE IF NOT EXISTS Customers (
+        customer_id INTEGER PRIMARY KEY,
+        first_name TEXT,
+        last_name TEXT,
+        email TEXT,
+        password TEXT,
+        address TEXT,
+        phone_number TEXT
+    )
+''')
+
+# Create Categories table
+cursor.execute('''
+    CREATE TABLE IF NOT EXISTS Categories (
+        category_id INTEGER PRIMARY KEY,
+        name TEXT
+    )
+''')
+
+# Create Products table
+cursor.execute('''
+    CREATE TABLE IF NOT EXISTS Products (
+        product_id INTEGER PRIMARY KEY,
+        name TEXT,
+        description TEXT,
+        price REAL,
+        stock_quantity INTEGER,
+        category_id INTEGER,
+        FOREIGN KEY (category_id) REFERENCES Categories(category_id)
+    )
+''')
+
+# Create Orders table
+cursor.execute('''
+    CREATE TABLE IF NOT EXISTS Orders (
+        order_id INTEGER PRIMARY KEY,
+        customer_id INTEGER,
+        order_date DATE,
+        total_amount REAL,
+        FOREIGN KEY (customer_id) REFERENCES Customers(customer_id)
+    )
+''')
+
+# Create OrderDetails table
+cursor.execute('''
+    CREATE TABLE IF NOT EXISTS OrderDetails (
+        order_detail_id INTEGER PRIMARY KEY,
+        order_id INTEGER,
+        product_id INTEGER,
+        quantity INTEGER,
+        item_price REAL,
+        FOREIGN KEY (order_id) REFERENCES Orders(order_id),
+        FOREIGN KEY (product_id) REFERENCES Products(product_id)
+    )
+''')
+
+# Create PaymentDetails table
+cursor.execute('''
+    CREATE TABLE IF NOT EXISTS PaymentDetails (
+        payment_id INTEGER PRIMARY KEY,
+        order_id INTEGER,
+        payment_date DATE,
+        payment_amount REAL,
+        payment_method TEXT,
+        FOREIGN KEY (order_id) REFERENCES Orders(order_id)
+    )
+''')
+
+# Create Reviews table
+cursor.execute('''
+    CREATE TABLE IF NOT EXISTS Reviews (
+        review_id INTEGER PRIMARY KEY,
+        product_id INTEGER,
+        customer_id INTEGER,
+        rating INTEGER,
+        review_text TEXT,
+        review_date DATE,
+        FOREIGN KEY (product_id) REFERENCES Products(product_id),
+        FOREIGN KEY (customer_id) REFERENCES Customers(customer_id)
+    )
+''')
+
+# Commit the changes and close the connection
+conn.commit()
+conn.close()
