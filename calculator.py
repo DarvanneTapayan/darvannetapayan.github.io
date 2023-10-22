@@ -6,7 +6,7 @@ from http.server import HTTPServer, SimpleHTTPRequestHandler
 class MyHandler(SimpleHTTPRequestHandler):
     def do_GET(self):
         if self.path == '/':
-            self.path = 'calculator.html'
+            self.path = 'projects.html'
         return SimpleHTTPRequestHandler.do_GET(self)
 
 
