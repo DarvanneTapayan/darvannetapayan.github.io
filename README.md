@@ -1,4 +1,5 @@
 # Welcome to My GitHub Repository
+-[Github](darvannetapayan.github.io/public/index.html): Open my site by clicking on the link!
 
 Hello and welcome to my GitHub repository! I'm a Python enthusiast who's just starting out on my programming journey. In this repository, you'll find some of my early Python projects and code snippets as I learn and grow.
 
@@ -26,7 +27,7 @@ Here are some of the simple projects and code examples you can find in this repo
 4. **Basic Python Code Snippets:**
    - [Code Snippets](/code-snippets/): A collection of simple Python code snippets showcasing my learning progress.
   
-   - ### darvannetapayan.github.io/public/index.html
+   - [My Site](darvannetapayan.github.io/public/index.html): Click this!
 
 ## Getting Started
 
